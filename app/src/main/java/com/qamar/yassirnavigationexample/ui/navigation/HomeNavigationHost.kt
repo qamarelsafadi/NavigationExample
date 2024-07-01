@@ -10,6 +10,9 @@ import com.qamar.yassirnavigationexample.ui.navigation.HomeDestinations.HomeArgs
 import com.qamar.yassirnavigationexample.ui.screens.DetailsScreen
 import com.qamar.yassirnavigationexample.ui.screens.HomeScreen
 
+/**
+ * Destinations
+ */
 sealed class HomeDestinations(val route: String) {
 
     object HomeArgs {
@@ -21,7 +24,6 @@ sealed class HomeDestinations(val route: String) {
         const val DETAILS_SCREEN = "details-screen"
     }
 
-
     data object Home : HomeDestinations(HomeScreens.HOME_SCREEN)
     data object Details :
         HomeDestinations("${HomeScreens.DETAILS_SCREEN}/{$ID_ARGS}") {
@@ -30,6 +32,10 @@ sealed class HomeDestinations(val route: String) {
         }
     }
 }
+
+/**
+ * Navigation
+ */
 
 fun NavGraphBuilder.homeNavigation(navController: NavHostController) {
     navigation(

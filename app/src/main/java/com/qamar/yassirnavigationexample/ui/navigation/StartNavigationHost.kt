@@ -6,9 +6,18 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navigation
 import com.qamar.yassirnavigationexample.ui.screens.SplashScreen
 
+
+/**
+ * Destinations
+ */
+
 sealed class OnBoardingDestinations(val route: String) {
     data object Splash : OnBoardingDestinations("splash-screen")
 }
+
+/**
+ * Navigation
+ */
 
 fun NavGraphBuilder.onBoardingNavigation(navController: NavHostController) {
     navigation(

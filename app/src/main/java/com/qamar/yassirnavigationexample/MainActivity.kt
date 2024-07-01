@@ -9,6 +9,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
+import com.qamar.yassirnavigationexample.ui.navigation.NavGraphs
 import com.qamar.yassirnavigationexample.ui.navigation.authNavigationHost
 import com.qamar.yassirnavigationexample.ui.navigation.homeNavigation
 import com.qamar.yassirnavigationexample.ui.navigation.onBoardingNavigation
@@ -24,7 +25,7 @@ class MainActivity : ComponentActivity() {
                 Scaffold(modifier = Modifier.fillMaxSize()) { _ ->
                     NavHost(
                         navController = navController,
-                        startDestination = "on-boarding-graph"
+                        startDestination = NavGraphs.ON_BOARDING_GRAPH
                     ) {
                         onBoardingNavigation(navController)
                         authNavigationHost(navController)

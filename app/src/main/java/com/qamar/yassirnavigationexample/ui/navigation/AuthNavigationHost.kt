@@ -8,10 +8,18 @@ import com.qamar.yassirnavigationexample.ui.screens.LoginScreen
 import com.qamar.yassirnavigationexample.ui.screens.RegisterScreen
 import com.qamar.yassirnavigationexample.ui.screens.SplashScreen
 
+/**
+ * Destinations
+ */
+
 sealed class AuthDestinations(val route: String) {
     data object Login : AuthDestinations("login-screen")
     data object Register : AuthDestinations("register-screen")
 }
+
+/**
+ * Navigation
+ */
 
 fun NavGraphBuilder.authNavigationHost(navController: NavHostController) {
     navigation(

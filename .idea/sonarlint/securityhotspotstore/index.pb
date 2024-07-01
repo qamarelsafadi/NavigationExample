@@ -13,8 +13,6 @@ x
 Happ/src/main/java/com/qamar/yassirnavigationexample/ui/util/withDelay.kt,1/f/1f8c00481865fd8fe7c4647bc32cf22322b1683a
 ‡
 Wapp/src/main/java/com/qamar/yassirnavigationexample/ui/navigation/AuthNavigationHost.kt,3/3/33f07e6861ff0be013bcd2e426d6d60c80ff97fa
-~
-Napp/src/main/java/com/qamar/yassirnavigationexample/ui/screens/SplashScreen.kt,3/3/33f74f6b957110a489e3c894612b5f2a84508b22
 }
 Mapp/src/main/java/com/qamar/yassirnavigationexample/ui/screens/LoginScreen.kt,c/a/ca72327302fe0751952701f304266292c23cd6ac
 €
